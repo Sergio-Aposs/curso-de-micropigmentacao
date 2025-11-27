@@ -1,0 +1,13 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Ícone - Sobrancelha</title>
+  <!-- Fundo rosa -->
+  <rect width="100%" height="100%" fill="#E348A1"></rect>
+  <!-- Sobrancelha estilizada (branca) -->
+  <path d="M72 320
+           C130 220, 210 170, 280 160
+           C340 150, 410 170, 440 200
+           C418 190, 382 180, 342 178
+           C286 176, 238 202, 186 238
+           C148 266, 108 298, 72 320 Z" fill="#ffffff" transform="scale(1,0.9) translate(0,26)"></path>
+</svg>
