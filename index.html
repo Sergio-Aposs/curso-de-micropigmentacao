@@ -191,6 +191,31 @@
     .video-iframe{height:220px;}
     .price-now{font-size:22px;}
   }
+.beforeafter img.img {
+  width:220px;
+  height:160px;
+  object-fit:cover;
+  border-radius:6px;
+  display:block;
+}
+.bonus-img {
+  width: 100%;
+  height: 150px;
+  background:#f7e4f0;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.bonus-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+  border-radius:6px;
+}
+
+  
 </style>
 </head>
 
@@ -222,10 +247,12 @@
   <h2 class="center">Resultados Reais — Você Também Vai Aprender a Fazer Isso</h2>
 
   <div class="beforeafter" role="list">
-    <div class="img">resultado1.webp</div>
-    <div class="img">resultado2.webp</div>
-    <div class="img">resultado3.webp</div>
-    <div class="img">resultado4.webp</div>
+   <div class="beforeafter" role="list">
+   <img class="img" src="resultado1.webp" alt="Resultado 1">
+   <img class="img" src="resultado2.webp" alt="Resultado 2">
+   <img class="img" src="resultado3.webp" alt="Resultado 3">
+   <img class="img" src="resultado4.webp" alt="Resultado 4">
+  </div>
   </div>
 </section>
 
@@ -350,27 +377,36 @@
 
   <div class="bonus-grid">
 
+    <!-- BÔNUS 1 -->
     <div class="bonus">
-      <div class="bonus-img">jessica-soares.webp</div>
+      <div class="bonus-img">
+        <img src="bonus1.webp" alt="Mentoria Online - 30 dias">
+      </div>
       <h4>Mentoria Online (30 dias)</h4>
-      <p class="muted">Suporte para dúvidas durante seu aprendizado. (Avaliado em R$997)</p>
+      <p class="muted">Suporte para dúvidas durante seu aprendizado. (Avaliado em R$297)</p>
     </div>
 
+    <!-- BÔNUS 2 -->
     <div class="bonus">
-      <div class="bonus-img">notebook-celular.webp</div>
+      <div class="bonus-img">
+        <img src="bonus2.webp" alt="E-book Especial de Marketing">
+      </div>
       <h4>E-book Especial</h4>
-      <p class="muted">Modelos de post, precificação e captação de clientes. (Avaliado em R$57)</p>
+      <p class="muted">Modelos de post, precificação e captação de clientes. (Avaliado em R$97)</p>
     </div>
 
+    <!-- BÔNUS 3 -->
     <div class="bonus">
-      <div class="bonus-img">estudio.webp</div>
+      <div class="bonus-img">
+        <img src="bonus3.webp" alt="Checklists e Documentos Prontos">
+      </div>
       <h4>Checklists e Documentos</h4>
-      <p class="muted">Materiais prontos para organizar seu atendimento. (Avaliado em R$97)</p>
+      <p class="muted">Materiais prontos para organizar seu atendimento. (Avaliado em R$147)</p>
     </div>
 
   </div>
 
-  <p class="center strong" style="margin-top:12px;color:var(--accent)">SÃO MAIS R$ 1.000,00 EM BÔNUS, TOTALMENTE GRÁTIS.</p>
+  <p class="center strong" style="margin-top:12px;color:var(--accent)">SÃO MAIS R$ 541,00 EM BÔNUS, TOTALMENTE GRÁTIS.</p>
 </section>
 
    <div class="price-box">
@@ -388,39 +424,55 @@
   <p class="muted">Ao finalizar o curso, você pode emitir seu certificado digital.</p>
   <div style="margin:16px auto;max-width:420px">
     <div style="background:#fff;border:1px solid #eee;padding:18px;border-radius:8px">
-      <div style="height:260px;display:flex;align-items:center;justify-content:center;color:#bbb">
-        certificado.webp
+      
+      <!-- IMAGEM REAL DO CERTIFICADO -->
+      <div style="height:260px;overflow:hidden;border-radius:6px;">
+        <img src="certificado.webp" alt="Certificado de Conclusão" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- DEPOIMENTOS -->
 <section class="section">
   <h2 class="center">Depoimentos de Alunas</h2>
   <div style="max-width:820px;margin:0 auto">
-    <div class="testimonial">depoimento1.webp</div>
-    <div class="testimonial">depoimento2.webp</div>
-    <div class="testimonial">depoimento3.webp</div>
+
+    <div class="testimonial">
+      <img src="depoimento1.webp" alt="Depoimento 1" style="width:100%;border-radius:6px;display:block;">
+    </div>
+
+    <div class="testimonial">
+      <img src="depoimento2.webp" alt="Depoimento 2" style="width:100%;border-radius:6px;display:block;">
+    </div>
+
+    <div class="testimonial">
+      <img src="depoimento3.webp" alt="Depoimento 3" style="width:100%;border-radius:6px;display:block;">
+    </div>
+
   </div>
 </section>
+
+     
 <!-- GARANTIA -->
 <section class="section center">
   <div class="guarantee" style="display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap">
-    <div style="width:140px;height:140px;border-radius:999px;background:#fff;border:3px solid #f2d9ef;display:flex;align-items:center;justify-content:center">
-      <div style="text-align:center;color:var(--accent)">
-        <div style="font-weight:800;font-size:18px">RISCO</div>
-        <div style="font-weight:800;font-size:18px">ZERO</div>
-        <div style="font-size:13px" class="muted">Garantia de 7 dias</div>
-      </div>
+
+    <!-- IMAGEM REAL DO SELO DE GARANTIA -->
+    <div style="width:160px;height:160px;">
+      <img src="selo-garantia.webp" alt="Selo de Garantia de 7 dias" style="width:100%;height:100%;object-fit:contain;display:block;">
     </div>
 
     <div style="max-width:640px;text-align:left">
       <h3 class="strong">Garantia Incondicional</h3>
       <p class="muted">Você tem 7 dias para testar o conteúdo. Se não for para você, devolvemos 100% do valor.</p>
     </div>
+
   </div>
 </section>
+
 
 <!-- FAQ ACORDEÃO -->
 <section class="section faq">
@@ -487,6 +539,7 @@
 
 </body>
 </html>
+
 
 
 
