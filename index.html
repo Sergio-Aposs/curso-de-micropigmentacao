@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Curso de Micropigmentação - Oferta Especial</title>
 <meta name="description" content="Curso de Micropigmentação 100% online. Vídeo aulas + materiais + certificado digital + bônus exclusivos. Acesso imediato.">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 <style>
   :root{
@@ -227,10 +227,17 @@
   <h1>Aprenda Micropigmentação do Zero com Aulas 100% Online e Certificado Digital</h1>
   <p class="sub">Curso completo em vídeo aulas + materiais complementares + bônus exclusivos. Acesso imediato.</p>
 
-  <div class="hero-video">
-    <!-- substitua o src com seu embed se quiser -->
-    <iframe class="video-iframe" src="https://www.youtube.com/embed/4-cPbeWHTOc" allowfullscreen title="Apresentação do curso"></iframe>
+ <div class="video-wrapper" onclick="loadVideo()" style="cursor:pointer;">
+  <img src="https://img.youtube.com/vi/4-cPbeWHTOc/maxresdefault.jpg" 
+       alt="Assista ao vídeo" 
+       style="width:100%;border-radius:8px;">
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+              width:90px;height:90px;background:rgba(0,0,0,0.6);border-radius:50%;
+              display:flex;align-items:center;justify-content:center;">
+    <div style="width:0;height:0;border-top:18px solid transparent;border-bottom:18px solid transparent;border-left:28px solid #fff;"></div>
   </div>
+</div>
+
 
   <div class="price-box">
     <div class="price-old">De R$ 497,00</div>
@@ -307,7 +314,7 @@
 </section>
 
 <div class="cta-center">
-  <a class="btn btn-cta" href="https://go.hotmart.com/V103165986A">SIM, QUERO O CURSO</a>
+  <a class="btn btn-cta" href="https://go.hotmart.com/V103165986A">QUERO GARANTIR MINHA VAGA AGORA</a>
 </div>
 <!-- MÓDULOS (MANTIDO INTACTO) -->
 <section class="section module-list">
@@ -422,7 +429,7 @@
 <section class="section cert">
   <h2>Certificado Digital</h2>
   <p class="muted">Ao finalizar o curso, você pode emitir seu certificado digital.</p>
-  <div style="margin:5px auto;max-width:480px">
+  <div style="margin:8px auto;max-width:480px">
     <div style="background:#fff;border:1px solid #eee;padding:18px;border-radius:8px">
       
       <!-- IMAGEM REAL DO CERTIFICADO -->
@@ -476,7 +483,8 @@
 
 <!-- FAQ ACORDEÃO -->
 <section class="section faq">
-  <h2 class="left">Perguntas Frequentes</h2>
+  <h2>Perguntas Frequentes</h2>
+
   <dl>
     <dt>Qual o formato do curso?</dt>
     <dd>Você terá acesso a diversas vídeo aulas (passo a passo) + Bônus Especiais.</dd>
@@ -485,28 +493,29 @@
     <dd>Atualmente o Curso Micropigmentação Perfeita está no valor promocional de apenas R$137,00.</dd>
 
     <dt>Quais as formas de pagamento?</dt>
-    <dd>Você tem as opções de pagamento via cartões de crédito, boleto.</dd>
+    <dd>Você pode pagar via cartão de crédito ou boleto.</dd>
 
     <dt>Ainda não recebi o curso, o que fazer?</dt>
-    <dd>Verifique as caixas de spam/lixo/outros de seu e-mail, pois o link de acesso pode ser redirecionado para alguma dessas pastas.</dd>
+    <dd>Verifique as pastas spam/lixo/outros, pois o e-mail pode ter sido redirecionado.</dd>
 
     <dt>Como vou receber o curso?</dt>
-    <dd>Assim que seu pedido for aprovado, o link de acesso ao curso será enviado ao seu e-mail, onde você terá acesso à sua área de membros do curso com login e senha pessoal.</dd>
+    <dd>Assim que o pagamento for aprovado, você recebe um e-mail com login e senha para acessar a área de membros.</dd>
 
     <dt>Tenho que pagar alguma mensalidade?</dt>
-    <dd>Não, esse valor é único. Sem qualquer taxa ou mensalidade adicional.</dd>
+    <dd>Não. O pagamento é único, sem mensalidade.</dd>
 
     <dt>Por quanto tempo terei acesso ao curso?</dt>
-    <dd>Você terá acesso ao curso por 1 anos e caso não se sinta satisfeito com sua compra, você pode fazer o cancelamento em até 7 dias.</dd>
+    <dd>Você terá acesso por 1 ano, com garantia de 7 dias para reembolso caso não goste.</dd>
   </dl>
 </section>
+
 
 <div class="cta-center">
   <a class="btn btn-cta" href="https://go.hotmart.com/V103165986A">QUERO GARANTIR MEU ACESSO AGORA</a>
 </div>
 
 <footer>
-  <p style="text-align:center;color:var(--muted);padding:20px 0">© Studio Jessica Soares — Curso 100% Online. Todos os direitos reservados.</p>
+  <p style="text-align:center;color:var(--muted);padding:20px 0">© Curso Jessica Soares — Curso 100% Online. Todos os direitos reservados.</p>
 </footer>
 
 </div> <!-- fim .wrap -->
@@ -537,8 +546,23 @@
 })();
 </script>
 
+  <script>
+function loadVideo() {
+  const wrapper = document.querySelector(".video-wrapper");
+  wrapper.innerHTML = `
+    <iframe class="video-iframe"
+      src="https://www.youtube.com/embed/4-cPbeWHTOc?autoplay=1"
+      allowfullscreen
+      title="Apresentação do curso"
+      style="width:100%;height:460px;border:0;border-radius:8px;">
+    </iframe>
+  `;
+}
+</script>
+
 </body>
 </html>
+
 
 
 
